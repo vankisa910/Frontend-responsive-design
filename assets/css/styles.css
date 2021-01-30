@@ -1,0 +1,254 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #4a4848;
+    font-family: 'Ubuntu Mono', monospace;
+    line-height: 1.5em;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+h4 {
+    margin: 0;
+}
+mark {
+    background-color: #000;
+    color: #fff;
+}
+.title {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+}
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+abbr[title] {
+    text-decoration: none;
+}
+.main-menu {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.responsive-menu {
+    display: none;
+}
+
+.main-menu-responce {
+    display: none;
+}
+.main-menu a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    color: #fff;
+    line-height: 1.5em;
+    text-shadow: -3px 1px 7px #000;
+}
+.hero-section header {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.container {
+    background-color: #F7F5F2;
+}
+
+.container > section {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.about figure {
+    margin-left: 0;
+}
+.about figure img {
+    width: 100%;
+}
+
+.cafe-news {
+    border-left: 5px solid #80808057;
+    padding-left: 15px;
+}
+
+.figTitle {
+    font-style: normal;
+}
+.figTitle span {
+    font-weight: bold;
+}
+.title {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+/* 
+.coffe-menu {
+    display: none;
+} */
+/* .section-menu  {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px 0px #00000087;
+    padding: 30px 15px;
+}
+.section-menu [type="radio"] {
+    width: 50%;
+}
+.section-menu [type="radio"]:checked ~ .coffe-menu {
+    display:block;
+} */
+
+.section-menu {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 3px 0px #00000087;
+    padding: 0;
+}
+
+.section-menu label {
+    display: inline-block;
+    width: 49%;
+    padding: 0 15px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0px 0px 3px 0px #00000087;
+}
+
+.section-menu [type="radio"] {
+    width: 50%;
+    height: 25px;
+    position: absolute;
+    opacity: 0;
+}
+
+.ckecked-element-status {
+    background-color: rgba(20, 20, 20, 0.2);
+    position: absolute;
+    width: 48%;
+    height: 24px;
+    top: 3px;
+}
+
+.ckecked-element-status.eat-overlay {
+    display: none;
+    left: 4.5px;
+    transition: 1.3s;
+}
+.ckecked-element-status.drink-overlay {
+    display: none;
+    right:5px;
+    transition: 1.3s;
+}
+.section-menu [type="radio"].eat-input {
+    top: 0px;
+    left: 0;
+}
+
+.section-menu [type="radio"].drink-input {
+    top: 0px;
+    right: 0;
+}
+
+.coffe-menu {
+    display: none;
+    padding: 25px;
+}
+
+.section-menu [type="radio"]:checked.eat-input ~ .eat, .section-menu [type="radio"]:checked.eat-input ~ .ckecked-element-status.eat-overlay {
+    display: block;
+}
+
+.section-menu [type="radio"]:checked.drink-input ~ .drink, .section-menu [type="radio"]:checked.drink-input ~ .ckecked-element-status.drink-overlay {
+    display: block;
+}
+
+.menu-subscription dd{
+    margin: 0;
+    color: rgb(139, 137, 137);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.menu-subscription dt {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menu figure {
+    margin: 25px 0px 0px;
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid rgb(175, 172, 172);
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+textarea::placeholder {
+    line-height: 40px;
+}
+
+.submit-button {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    height: 35px;
+    border: none;
+    transition: 0.3s;
+}
+
+footer {
+    text-align: center;
+}
+
+/* EFFECTS */
+
+.submit-button:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}

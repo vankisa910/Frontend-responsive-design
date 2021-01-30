@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend design</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/icons.css"> 
+    <link rel="stylesheet" href="assets/css/media-query.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <header>
+        <menu class="main-menu">
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#whereToFind">where</a>
+        </menu>
+
+        <div class="responsive-menu">
+            <button><span class="icon-menu"></span></button>
+            <div class="responce-view">
+                <menu class="main-menu-responce">
+                    <a href="#">home</a>
+                    <a href="#about">about</a>
+                    <a href="#menu">menu</a>
+                    <a href="#whereToFind">where</a>
+                </menu>
+            </div>
+            
+        </div>
+        <section class="hero-section">
+            <header>
+                <h1>
+                    the <br> Cafe
+                </h1>
+            </header>
+        </section>
+    </header>
+
+    <article class="container">
+        <!-- SECTION ABOUT -->
+        <section class="about " id="about" >
+            <header>
+                <h4 class="title">About the cafe</h4>
+            </header>
+            <section>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis elementum luctus tristique. Vestibulum ornare, libero vel luctus tristique, nulla libero ultricies mauris, 
+                    at accumsan nibh est vel odio. Etiam ipsum ex, semper et ex in, fermentum pellentesque magna. Integer justo turpis, 
+                    scelerisque eu ullamcorper ac, lobortis ac velit. Mauris neque enim, commodo nec mauris ac, finibus sagittis dolor. 
+                    Etiam lectus nulla, interdum et nisl auctor, laoreet vehicula mauris. Proin vel metus vel ipsum tincidunt luctus. 
+                    Vivamus eget lobortis quam. Suspendisse accumsan tempus erat eu vulputate. Aenean pharetra arcu in lacinia eleifend. 
+                    Suspendisse nec turpis hendrerit, dignissim risus sit amet, hendrerit lorem. Vestibulum mattis in magna in viverra. 
+                    Suspendisse potenti. Morbi tincidunt libero dictum velit bibendum malesuada. 
+                    Aenean vitae sollicitudin diam, sed ultricies quam. Nulla nec nulla pharetra, congue quam non, aliquam enim.
+                </p>
+               
+                <p>
+                    Pellentesque ornare interdum commodo. Quisque justo mauris, dignissim eu vehicula finibus,
+                    maximus tempus lacus. Mauris at finibus nulla, a tempus ex. Donec enim nisl, fringilla vitae 
+                    purus pretium, gravida venenatis eros. Aliquam pretium, sem ac malesuada faucibus, orci metus
+                    blandit libero, in fermentum ligula felis sit amet sapien. Nam tincidunt eros quam, nec placerat
+                    justo vehicula volutpat. Fusce eu quam volutpat, vehicula urna et, pulvinar elit. Orci varius
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum
+                    primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque sagittis metus vitae
+                    orci convallis, consequat facilisis massa aliquam. Suspendisse tempus neque vitae condimentum 
+                    lacinia. Vivamus pharetra imperdiet nibh, sit amet auctor urna dignissim quis. Aenean vulputate
+                    quam nisl, sed molestie ex fermentum eget.
+                </p>
+
+                <div class="cafe-news">
+                    <p> 
+                        <i>
+                            <q> Nascetur ridiculus mus. Vestibulum ante ipsum
+                                primis in faucibus orci luctus et ultrices posuere cubilia Curae;</q> Pellentesque sagittis metus vitae
+                        </i>
+                    </p>
+                    <p>
+                        Chef Pesho Peshev, Owner: 'The Cafe'
+                    </p>
+                </div>
+
+                <figure>
+                    <img src="assets/images/assorted-decors.jpg" alt="Assorted Decors">
+                    <figcaption>
+                        <p class="figTitle">
+                            <span>Openning hours:</span> Everyday form 6am to 5pm
+                        </p>
+                        <address  class="figTitle">
+                            <span>Address:</span> Lorem ipsum dolor sit amet 2552
+                        </address>
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+
+        <!-- SECTION MENU -->
+        <section class="menu" id="menu">
+            <header>
+                <h4 class="title"> the Menu</h4>
+            </header>
+
+            <section class="section-menu">
+              
+                    <label for="Eat">Eat</label>
+                    <input type="radio" name="menu" class="eat-input" checked>
+                    <div class="ckecked-element-status eat-overlay"></div>
+
+                    <label for="drink">Drink</label>
+                    <input type="radio" name="menu" class="drink-input" checked>
+                    <div class="ckecked-element-status drink-overlay"></div>
+
+                    <div class="coffe-menu eat">
+                        <dl class="menu-subscription">
+                            <dt>Sandwitch</dt>
+                            <dd>Cheese, Meal....</dd>
+                            <dt>Soup</dt>
+                            <dd>Patotato, fish, ...</dd>
+                            <dt>Pizza</dt>
+                            <dd>.................</dd>
+                        </dl>
+                    </div>
+                    <div class="coffe-menu drink" >
+                        <dl class="menu-subscription">
+                            <dt>Coffee</dt>
+                            <dd>Black hot drink</dd>
+                            <dt>Milk</dt>
+                            <dd>White cold drink</dd>
+                          </dl>
+                    </div>
+            </section>
+
+            <figure>
+                <img src="assets/images/coffee-cup.webp" alt="Coffe cup" width="100%">
+            </figure>
+        </section>
+
+        <!-- SECTION WHERE TO FIND US -->
+        <section class="whereToFind " id="whereToFind">
+            <header>
+                <h4 class="title">Where to find us</h4>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <figure>
+                <img src="assets/images/destination.jpg" alt="destination" width="100%">
+            </figure>
+            <p>
+                <mark> <abbr title="For your information">FYI! </abbr></mark> 
+                &nbsp;Pellentesque ornare interdum commodo. Quisque justo mauris, dignissim eu vehicula finibus,
+                maximus tempus lacus. Mauris at finibus nulla, a tempus ex. Donec enim nisl, fringilla vitae 
+                purus pretium, gravida venenatis eros. Aliquam pretium, sem ac malesuada faucibus, orci metus
+                blandit libero, in fermentum ligula felis
+            </p>
+            <p><strong>Lorem ipsum </strong> pellentesque ornare interdum commodo. Quisque justo mauris, dignissim eu vehicula finibus,</p>
+
+            <form>
+                <input type="text" placeholder="Name" class="form-control">
+                <input type="number" placeholder="How many people" class="form-control">
+                <input type="datetime-local" class="form-control">
+                <textarea  class="form-control" placeholder="Message/ Special requirements"></textarea>
+
+                <button type="submit" class="submit-button">Send message</button>
+            </form>
+        </section>
+    </article>
+
+    <footer>
+        <p>Powered by WEB DEV | 2020</p>
+    </footer>
+
+</body>
+</html>
